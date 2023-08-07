@@ -1,0 +1,36 @@
+
+
+/*      these are the body style elements       */
+
+
+body
+{
+    background-color: wheat;
+}
+/*      modify the pic style, but does not seem to work    */
+
+
+#pic
+{
+    text-align: center;
+
+}
+
+/*      modify header text style        */
+
+h1
+{
+    text-align: center;
+
+
+}
+
+/*      modify button design elements    */
+
+.button{
+width: 500px;
+height: 30;
+background-color: whitesmoke;
+border-radius: 10px;
+border-color: olivedrab;
+}

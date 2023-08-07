@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+
+<!-- NOTE TO SELF, ADD BALOON MARQUEE FOR FUN BEFORE JUL 30-->
+
+
+
+<!--
+    Strings page for input validation assignment, palindrome assignment, and putting it all together
+    William Schubert
+    24Jul23
+    wschubert84230@uat.edu
+-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--we need a style sheet to define the styles for our page-->
+    <link href="stringsStyle.css" rel="stylesheet" type="text/css">
+    <!--we need to link the js file the html file so we can use the js resources-->
+    <script src="code.js"></script>
+    <!--title for the website-->
+    <title>Strings Page</title>
+</head>
+<body>
+   <h1>Welcome friend, to my Strings page. Enjoy!</h1> 
+<center><img id="pic" src="Password Meme.jpg" alt=""></center>
+
+
+   <center><br><h3>Please log in below.</h3></br>
+    <br>
+    <div id="loginStatus">Status of login</div></center>
+    <br>
+    <br>
+<center>
+<form id="creditSubmit" onsubmit="return false">
+First Name: <input type="text" id="fName"></body></form>
+<br>
+Last Name: <input type="text" id="lName">
+<br>
+<br>
+Zip Code:  <input type="text" id="zipCode">
+<br>
+<br>
+<input type="submit" onclick="checkCreds();" class="button">
+
+</form>
+</center>
+<br>
+<br>
+<br>
+<h1>Palindrome Checker</h1>
+<!--EXAMPLES
+Dammit, I'm Mad
+Do geese see God
+Was It a Cat I Saw
+Borrow or Rob-->
+<br>
+<center>
+<div id="palinStatus">Palindrome Status</div>
+<br>
+<br>
+<form id="palinSubmit" onsubmit="return false">
+Enter A Palindrome: <input type="text" id="palinInput">
+<br>
+<br>
+<input type="submit" onclick="checkPalin();" class="button">
+</form>
+</center>
+<br>
+<br>
+<br>
+<br>
+<!-- Putting it all together assignment
+1. form to fill in a time
+2. a button to start a countdown
+3. A display showing countdown
+4. A song to play after countdown -->
+<center>
+<h1>Putting It All Together</h1>
+<br>
+<br>
+<br>
+<h3 id="statusUpdate"></h3>
+
+<form id="songTimeSubmit" onsubmit="return false">
+Enter a time in seconds: <input type="number" id="timeInput">
+<br>
+<br>
+<input type="submit" onclick="setTime();" class="button">
+
+<marquee id="mymarquee"
+    class="html-marquee" 
+        style="text-align:right;"
+        direction="up"
+            behaviour="scroll"
+            scrollamount="25">
+<img id="Balloooon" src="RedBalloon.jfif">
+</marquee>
+
+<marquee id="mymarquee"
+    class="html-marquee"
+        style="text-align:left;"
+        direction="up" 
+            behaviour="scroll"
+            scrollamount="25">
+<img id="Balloooon" src="RedBalloon.jfif">
+</marquee>
+
+</center>
+</form>
+</body>
+</html>

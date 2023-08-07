@@ -1,0 +1,39 @@
+body{
+    background-color: darkkhaki;
+    color: darkslategray;
+}
+
+table, th {
+    border: 1px solid black;
+}
+
+   
+nav{
+    height: 60000px;
+    width: 200px;
+    float: left;
+    padding: 5px;
+    line-height: 30px;
+}
+
+footer{
+    text-align: center;
+    margin-right: 200px;
+}
+
+#Llamameme.jfif{
+    margin-right: 200px;
+    text-align: center;
+}
+
+#bodytext{
+    margin-right: 200px;
+}
+
+.button{
+width: 500px;
+height: 30;
+background-color: whitesmoke;
+border-radius: 10px;
+border-color: olivedrab;
+}

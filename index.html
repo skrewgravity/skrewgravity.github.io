@@ -1,0 +1,166 @@
+<!DOCTYPE HTML>
+<HTML>
+<!--William Schubert, 6/21/2023-->
+
+<!--This is the name of my page-->
+<!--We need to link the js file with the html file so we can use the js resources-->
+<script src="code.js"></script>
+<!--Also need to link the js file for Space Launch-->
+<script src="classCode.js"> </script>
+<!--we need a style sheet to define the styles for our page-->
+<link href="style.css" rel="stylesheet" type="text/css>"
+<head>
+<title>William S's Page</title>
+<!-- internal style setting -->
+<style>
+    td {border: 1px solid black}
+</style>
+
+</head>
+
+<head>
+<body style="background: rgb(207, 218, 197);">
+    
+    <!--Here I changed the color of the page and center my pages header-->
+    <header style="text-align: center;">
+        <h1>Welcome to Williams Wonderful Website</h1>
+    </header>
+</head>
+</body>
+<!--Navigation-->
+<nav>
+    <h2>
+        Navigation
+    </h2>
+    <a href="index.html">Home</a><br>
+    <a href="boards.html">Boards </a><br>
+</nav>
+<!--The following paragraph is centered and the font is smaller than the title above-->
+<header style="text-align: center;">
+    <h4>
+        I'm new to programming
+        and there is lots to learn,
+        but I'm enjoying it!
+    </h4>
+    <br>
+    <!--Here is my image, centered in the middle of the page
+    Also I have assigned a marquee behavior to the image-->
+    <center>
+        <marquee id="mymarquee" class="html-marquee" direction="left" behavior="alternate" scrollamount="12">
+        <img id="Llama or Alpaca?" src="Llama meme.jfif" alt="Llama or Alpaca?">
+        </marquee>
+    </center>
+    </body>
+    <!--In a small font,I wrote a short paragraph about me and my page-->
+    <p>
+    <h4>this is a paragraph about me,
+        i'm new to this and worried i'll get
+        lost or not be able to keep up. but who cares.
+        i'm going to pass this class!</h4>
+    </p>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!--This is my Start button and my Stop button
+        This also sets my onClick parameters-->
+    <button id="startButton" onclick="startFun();">Bounce</button>
+    <button id="stopButton" onclick="stopFun();">Stop Bouncing</button>
+    <br>
+    <br>
+    <!--This is where my die results are written in
+        the sum results are calculated in my code.js page-->
+    <h2>Lets play CRAPS</h2>
+    Die 1 result: <div id="die1Res">Press "Play Craps" to start game</div> <br>
+    Die 2 result: <div id="die2Res">Press "Play Craps" to start game</div> <br>
+    Sum of the dice: <div id="diceSum">Press "Play Craps" to start game</div> <br <!--not finished-->
+    Game result: <div id="gameRes">Press "PLAY CRAPS" to start game</div> <br>
+    <!-- NOT FINISHED-->
+    <button onclick="playCraps(); ">PLAY CRAPS</button>
+    <br>
+    <br>
+    </center>
+    <br>
+    <br>
+    <br>
+
+    <!-- Below is where I added 2 buttons to my page to play a fun sounds -->
+
+    <h1>Play Sounds</h1>
+    <button onclick="playCreepyJack();">Pop Goes the Weasel</button>
+    <br>
+    <br>
+    <button onclick="playWilhelm();">Wilhelm Scream</button>
+    <br>
+    <br>
+
+    <!-- Below is a table I have created for my Index Page-->
+    
+    <h1>The Cost of Ad-Free Streaming Services</h1>
+    
+    <table width="60%" id="myTable">
+                <col style="width: 15%;">
+                <col style="width: 15%;">
+                <col style="width: 15%;">
+                <col style="width: 15%;">
+            <thead>
+                <th>Service</th>
+                <th>Student Price</th>
+                <th>Regular Price</th>
+                <th>Personal Rank</th>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Amazon's Prime Video</td>
+                    <td>$7.49</td>
+                    <td>$14.99</td>
+                    <td>#1</td>
+                </tr>
+                <tr>
+                    <td>HBO's Max</td>
+                    <td>N/A</td>
+                    <td>$15.99</td>
+                    <td>#3</td>
+                </tr>
+                <tr>
+                    <td>Hulu</td>
+                    <td>$1.99 (With Ads)</td>
+                    <td>$14.99</td>
+                    <td>#4</td>
+                </tr>
+                <tr>
+                    <td>Netflix</td>
+                    <td>N/A</td>
+                    <td>$15.49</td>
+                    <td>#2</td>
+                </tr>
+            </tbody>
+    </table>
+    
+
+    <!-- this is where my parameters for Fall and Spring launch are used-->
+    <br>
+    <br>
+    <h1>Fun With Objects</h1>
+    <script>
+        const fallLaunch = new Mission("To Boldy Go", 95, 13, "November", 1971, "fiona", 3)
+        const springLaunch = new Mission("already been there", 30, 8, "May", 2024, "laura", 25);
+    </script>
+    <button onclick="displayFall();" class="button">Display fall parameters</button>
+    <button onclick="displaySpring();" class="button">Display spring parameters</button>
+
+    
+    <!--The footer here is centered and contains my name and UAT's address-->
+    <footer style="text-align: center;">
+        <h2>Sir William Schubert</h2><br>
+        University of Advancing Technology<br>
+        2625 W. Baseline Road<br>
+        Tempe, AZ 85283-1056<br>
+        Fax: 602-383-8222<br>
+    </footer>
+    <!--while(!(succeed =try()));-->
+
+
+
+</html>
